@@ -1,5 +1,6 @@
 <template>
 	<view class="content">
+		<file-tabs :tabs="tabs" />
 		html
 		<textarea v-model="htmlText" />
 		css
@@ -17,6 +18,7 @@
 	export default {
 		data() {
 			return {
+				tabs: ['html', 'css'],
 				id: '',
 				htmlText: '',
 				cssText: ''
@@ -24,13 +26,18 @@
 		},
 		onLoad() {
 			const id = window.location.pathname.substr(1)
-			if(id){
+			if (id) {
 				const db = uniCloud.database();
-				db.collection('snippets').doc(id).get().then(({result:{affectedDocs,data:[item]}})=>{
-					if(affectedDocs===1){
+				db.collection('snippets').doc(id).get().then(({
+					result: {
+						affectedDocs,
+						data: [item]
+					}
+				}) => {
+					if (affectedDocs === 1) {
 						console.log(item)
-						this.htmlText=item.html
-						this.cssText=item.css
+						this.htmlText = item.html
+						this.cssText = item.css
 					}
 				})
 			}

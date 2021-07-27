@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App'
-
+import "tailwindcss/tailwind.css"
 Vue.config.productionTip = false
 
 App.mpType = 'app'

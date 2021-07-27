@@ -1,0 +1,12 @@
+{
+	"name": "web-snippet",
+	"version": "1.0.0",
+	"private": true,
+	"author": "lif3ng <lif3ng@icloud.com>",
+	"license": "MIT",
+	"dependencies": {
+		"autoprefixer": "^9",
+		"postcss": "^7",
+		"tailwindcss": "npm:@tailwindcss/postcss7-compat"
+	}
+}
