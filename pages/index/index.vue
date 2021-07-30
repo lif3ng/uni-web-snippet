@@ -2,6 +2,7 @@
   <view class="content">
     <file-tabs :tabs="tabs" :active.sync="activeTab" />
     <p>{{ activeTab }}</p>
+    <div ref="editor" class="" />
     html
     <textarea v-model="htmlText" />
     css
@@ -17,17 +18,28 @@
 </template>
 
 <script>
+import { EditorState, EditorView, basicSetup } from "@codemirror/basic-setup";
+import { getEditorState } from "./utils/editor";
+
 export default {
   data() {
     return {
       tabs: ["HTML", "CSS"],
       activeTab: "html",
       id: "",
-      htmlText: "",
-      cssText: "",
+      code: {},
     };
   },
+  async mounted() {
+    // 	import {html} from "@codemirror/lang-html"
+
+    let view = new EditorView({
+      state: await getEditorState("css"),
+      parent: this.$refs.editor,
+    });
+  },
   onLoad() {
+    console.log("onload", this.$el);
     const id = window.location.pathname.substr(1);
     if (id) {
       const db = uniCloud.database();
@@ -51,6 +63,12 @@ export default {
     }
   },
   watch: {
+    code: {
+      deep: true,
+      handler(...args) {
+        console.log("code change", args);
+      },
+    },
     htmlText(html) {
       console.log({
         html,
@@ -71,12 +89,15 @@ export default {
     },
   },
   methods: {
+    onCodeChange(code) {
+      this.code[this.activeTab] = code;
+    },
     handleSave() {
       const db = uniCloud.database();
       db.collection("snippets")
         .add({
-          html: this.htmlText,
-          css: this.cssText,
+          // html: this.htmlText,
+          // css: this.cssText,
         })
         .then(({ result: { id } }) => {
           this.id = id;

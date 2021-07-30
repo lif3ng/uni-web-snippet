@@ -5,8 +5,17 @@
 	"author": "lif3ng <lif3ng@icloud.com>",
 	"license": "MIT",
 	"dependencies": {
+		"@codemirror/basic-setup": "^0.18.2",
+		"@codemirror/lang-css": "^0.18.0",
+		"@codemirror/lang-html": "^0.18.1",
+		"@codemirror/lang-javascript": "^0.18.0",
+		"@codemirror/state": "^0.18.7",
+		"@tailwindcss/postcss7-compat": "^2.2.7",
 		"autoprefixer": "^9",
 		"postcss": "^7",
+		"postcss-import": "^14.0.2",
+		"postcss-loader": "^6.1.1",
 		"tailwindcss": "npm:@tailwindcss/postcss7-compat"
-	}
+	},
+	"devDependencies": {}
 }

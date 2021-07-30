@@ -23,6 +23,248 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@codemirror/autocomplete@^0.18.0":
+  version "0.18.8"
+  resolved "https://registry.nlark.com/@codemirror/autocomplete/download/@codemirror/autocomplete-0.18.8.tgz#e82847071bd28029356055a498492659911c70a2"
+  integrity sha1-6ChHBxvSgCk1YFWkmEkmWZEccKI=
+  dependencies:
+    "@codemirror/language" "^0.18.0"
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/text" "^0.18.0"
+    "@codemirror/tooltip" "^0.18.4"
+    "@codemirror/view" "^0.18.0"
+    lezer-tree "^0.13.0"
+
+"@codemirror/basic-setup@^0.18.2":
+  version "0.18.2"
+  resolved "https://registry.nlark.com/@codemirror/basic-setup/download/@codemirror/basic-setup-0.18.2.tgz#a766b7e8898ce5d4cd4782c1ebf87d15a0f1965f"
+  integrity sha1-p2a36ImM5dTNR4LB6/h9FaDxll8=
+  dependencies:
+    "@codemirror/autocomplete" "^0.18.0"
+    "@codemirror/closebrackets" "^0.18.0"
+    "@codemirror/commands" "^0.18.0"
+    "@codemirror/comment" "^0.18.0"
+    "@codemirror/fold" "^0.18.0"
+    "@codemirror/gutter" "^0.18.3"
+    "@codemirror/highlight" "^0.18.0"
+    "@codemirror/history" "^0.18.0"
+    "@codemirror/language" "^0.18.0"
+    "@codemirror/lint" "^0.18.0"
+    "@codemirror/matchbrackets" "^0.18.0"
+    "@codemirror/rectangular-selection" "^0.18.0"
+    "@codemirror/search" "^0.18.0"
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/view" "^0.18.0"
+
+"@codemirror/closebrackets@^0.18.0":
+  version "0.18.0"
+  resolved "https://registry.nlark.com/@codemirror/closebrackets/download/@codemirror/closebrackets-0.18.0.tgz#4bd7e9227ed6e90e590fa6d289d34b0c065cb8cf"
+  integrity sha1-S9fpIn7W6Q5ZD6bSidNLDAZcuM8=
+  dependencies:
+    "@codemirror/language" "^0.18.0"
+    "@codemirror/rangeset" "^0.18.0"
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/text" "^0.18.0"
+    "@codemirror/view" "^0.18.0"
+
+"@codemirror/commands@^0.18.0":
+  version "0.18.3"
+  resolved "https://registry.nlark.com/@codemirror/commands/download/@codemirror/commands-0.18.3.tgz#56283873fae9dd0c937da7dd0af5eadc9b378e9c"
+  integrity sha1-Vig4c/rp3QyTfafdCvXq3Js3jpw=
+  dependencies:
+    "@codemirror/language" "^0.18.0"
+    "@codemirror/matchbrackets" "^0.18.0"
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/text" "^0.18.0"
+    "@codemirror/view" "^0.18.0"
+    lezer-tree "^0.13.0"
+
+"@codemirror/comment@^0.18.0":
+  version "0.18.1"
+  resolved "https://registry.nlark.com/@codemirror/comment/download/@codemirror/comment-0.18.1.tgz#e39c8b6937b86852246decb3441683c66b03abf4"
+  integrity sha1-45yLaTe4aFIkbeyzRBaDxmsDq/Q=
+  dependencies:
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/text" "^0.18.0"
+    "@codemirror/view" "^0.18.0"
+
+"@codemirror/fold@^0.18.0":
+  version "0.18.1"
+  resolved "https://registry.nlark.com/@codemirror/fold/download/@codemirror/fold-0.18.1.tgz#118019ad79f6e0d48dc932823385d4d9f2e0eaf5"
+  integrity sha1-EYAZrXn24NSNyTKCM4XU2fLg6vU=
+  dependencies:
+    "@codemirror/gutter" "^0.18.0"
+    "@codemirror/language" "^0.18.0"
+    "@codemirror/rangeset" "^0.18.0"
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/view" "^0.18.0"
+
+"@codemirror/gutter@^0.18.0", "@codemirror/gutter@^0.18.3":
+  version "0.18.4"
+  resolved "https://registry.nlark.com/@codemirror/gutter/download/@codemirror/gutter-0.18.4.tgz#6ebdfc87d94b02ffa0ec7bcf40d20f989fe26457"
+  integrity sha1-br38h9lLAv+g7HvPQNIPmJ/iZFc=
+  dependencies:
+    "@codemirror/rangeset" "^0.18.3"
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/view" "^0.18.0"
+
+"@codemirror/highlight@^0.18.0":
+  version "0.18.4"
+  resolved "https://registry.nlark.com/@codemirror/highlight/download/@codemirror/highlight-0.18.4.tgz#83dfd402d7cbfe67dc9d0cb93a25755321014829"
+  integrity sha1-g9/UAtfL/mfcnQy5OiV1UyEBSCk=
+  dependencies:
+    "@codemirror/language" "^0.18.0"
+    "@codemirror/rangeset" "^0.18.0"
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/view" "^0.18.0"
+    lezer-tree "^0.13.0"
+    style-mod "^4.0.0"
+
+"@codemirror/history@^0.18.0":
+  version "0.18.1"
+  resolved "https://registry.nlark.com/@codemirror/history/download/@codemirror/history-0.18.1.tgz#853cde4b138b172235d58f945871f0fc08b7310a"
+  integrity sha1-hTzeSxOLFyI11Y+UWHHw/Ai3MQo=
+  dependencies:
+    "@codemirror/state" "^0.18.3"
+    "@codemirror/view" "^0.18.0"
+
+"@codemirror/lang-css@^0.18.0":
+  version "0.18.0"
+  resolved "https://registry.nlark.com/@codemirror/lang-css/download/@codemirror/lang-css-0.18.0.tgz#f82e7d38bd84da8ffa73188f7a268aba00e63737"
+  integrity sha1-+C59OL2E2o/6cxiPeiaKugDmNzc=
+  dependencies:
+    "@codemirror/autocomplete" "^0.18.0"
+    "@codemirror/highlight" "^0.18.0"
+    "@codemirror/language" "^0.18.0"
+    "@codemirror/state" "^0.18.0"
+    lezer-css "^0.13.0"
+
+"@codemirror/lang-html@^0.18.1":
+  version "0.18.1"
+  resolved "https://registry.nlark.com/@codemirror/lang-html/download/@codemirror/lang-html-0.18.1.tgz#2ca70a2559a120c9d3e5e2a46268fc979256de28"
+  integrity sha1-LKcKJVmhIMnT5eKkYmj8l5JW3ig=
+  dependencies:
+    "@codemirror/autocomplete" "^0.18.0"
+    "@codemirror/highlight" "^0.18.0"
+    "@codemirror/lang-css" "^0.18.0"
+    "@codemirror/lang-javascript" "^0.18.0"
+    "@codemirror/language" "^0.18.0"
+    "@codemirror/state" "^0.18.0"
+    lezer-html "^0.13.5"
+    lezer-tree "^0.13.0"
+
+"@codemirror/lang-javascript@^0.18.0":
+  version "0.18.0"
+  resolved "https://registry.nlark.com/@codemirror/lang-javascript/download/@codemirror/lang-javascript-0.18.0.tgz#e077b6601a076e1b4471c06ffc2b77dce8815c0e"
+  integrity sha1-4He2YBoHbhtEccBv/Ct33OiBXA4=
+  dependencies:
+    "@codemirror/autocomplete" "^0.18.0"
+    "@codemirror/highlight" "^0.18.0"
+    "@codemirror/language" "^0.18.0"
+    "@codemirror/lint" "^0.18.0"
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/view" "^0.18.0"
+    lezer-javascript "^0.13.0"
+
+"@codemirror/language@^0.18.0":
+  version "0.18.2"
+  resolved "https://registry.nlark.com/@codemirror/language/download/@codemirror/language-0.18.2.tgz#92b0e2ba0debfa8473d805efdabda5c24376cb16"
+  integrity sha1-krDiug3r+oRz2AXv2r2lwkN2yxY=
+  dependencies:
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/text" "^0.18.0"
+    "@codemirror/view" "^0.18.0"
+    lezer "^0.13.4"
+    lezer-tree "^0.13.0"
+
+"@codemirror/lint@^0.18.0":
+  version "0.18.4"
+  resolved "https://registry.nlark.com/@codemirror/lint/download/@codemirror/lint-0.18.4.tgz#4cdbb4fd6fee3ac8384df62a99efefe099932feb"
+  integrity sha1-TNu0/W/uOsg4TfYqme/v4JmTL+s=
+  dependencies:
+    "@codemirror/panel" "^0.18.1"
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/tooltip" "^0.18.4"
+    "@codemirror/view" "^0.18.0"
+    crelt "^1.0.5"
+
+"@codemirror/matchbrackets@^0.18.0":
+  version "0.18.0"
+  resolved "https://registry.nlark.com/@codemirror/matchbrackets/download/@codemirror/matchbrackets-0.18.0.tgz#64a493090d942de19f15a9ed3cb0fa19ed55f18b"
+  integrity sha1-ZKSTCQ2ULeGfFantPLD6Ge1V8Ys=
+  dependencies:
+    "@codemirror/language" "^0.18.0"
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/view" "^0.18.0"
+    lezer-tree "^0.13.0"
+
+"@codemirror/panel@^0.18.1":
+  version "0.18.2"
+  resolved "https://registry.nlark.com/@codemirror/panel/download/@codemirror/panel-0.18.2.tgz#f82dd69fc82d752ec5d6269bbdecbbdb8df69529"
+  integrity sha1-+C3Wn8gtdS7F1iabvey72432lSk=
+  dependencies:
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/view" "^0.18.0"
+
+"@codemirror/rangeset@^0.18.0", "@codemirror/rangeset@^0.18.2", "@codemirror/rangeset@^0.18.3":
+  version "0.18.4"
+  resolved "https://registry.nlark.com/@codemirror/rangeset/download/@codemirror/rangeset-0.18.4.tgz#84b615906236019107332a023116d2031f63b7bf"
+  integrity sha1-hLYVkGI2AZEHMyoCMRbSAx9jt78=
+  dependencies:
+    "@codemirror/state" "^0.18.0"
+
+"@codemirror/rectangular-selection@^0.18.0":
+  version "0.18.0"
+  resolved "https://registry.nlark.com/@codemirror/rectangular-selection/download/@codemirror/rectangular-selection-0.18.0.tgz#87e1a4d319b5d55b4e97294e6df0070164e836c0"
+  integrity sha1-h+Gk0xm11VtOlylObfAHAWToNsA=
+  dependencies:
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/text" "^0.18.0"
+    "@codemirror/view" "^0.18.0"
+
+"@codemirror/search@^0.18.0":
+  version "0.18.4"
+  resolved "https://registry.nlark.com/@codemirror/search/download/@codemirror/search-0.18.4.tgz#cb258c994db78df8c74c0350b84a0c275cfa2711"
+  integrity sha1-yyWMmU23jfjHTANQuEoMJ1z6JxE=
+  dependencies:
+    "@codemirror/panel" "^0.18.1"
+    "@codemirror/rangeset" "^0.18.0"
+    "@codemirror/state" "^0.18.6"
+    "@codemirror/text" "^0.18.0"
+    "@codemirror/view" "^0.18.0"
+    crelt "^1.0.5"
+
+"@codemirror/state@^0.18.0", "@codemirror/state@^0.18.3", "@codemirror/state@^0.18.6", "@codemirror/state@^0.18.7":
+  version "0.18.7"
+  resolved "https://registry.nlark.com/@codemirror/state/download/@codemirror/state-0.18.7.tgz#3339a732387bb2c034987c57ccf0649ef2f7c4c1"
+  integrity sha1-MzmnMjh7ssA0mHxXzPBknvL3xME=
+  dependencies:
+    "@codemirror/text" "^0.18.0"
+
+"@codemirror/text@^0.18.0", "@codemirror/text@^0.18.1":
+  version "0.18.1"
+  resolved "https://registry.nlark.com/@codemirror/text/download/@codemirror/text-0.18.1.tgz#badacd628b8485932f8a42468bca1a106e210f93"
+  integrity sha1-utrNYouEhZMvikJGi8oaEG4hD5M=
+
+"@codemirror/tooltip@^0.18.4":
+  version "0.18.4"
+  resolved "https://registry.nlark.com/@codemirror/tooltip/download/@codemirror/tooltip-0.18.4.tgz#981bc0ced792c6754148edbc1f60092f3fa54207"
+  integrity sha1-mBvAzteSxnVBSO28H2AJLz+lQgc=
+  dependencies:
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/view" "^0.18.0"
+
+"@codemirror/view@^0.18.0":
+  version "0.18.19"
+  resolved "https://registry.nlark.com/@codemirror/view/download/@codemirror/view-0.18.19.tgz#9d4f943a9e79ae00f6ad2ace0d6c759624faa86f"
+  integrity sha1-nU+UOp55rgD2rSrODWx1liT6qG8=
+  dependencies:
+    "@codemirror/rangeset" "^0.18.2"
+    "@codemirror/state" "^0.18.0"
+    "@codemirror/text" "^0.18.1"
+    style-mod "^4.0.0"
+    w3c-keyname "^2.2.4"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.nlark.com/@nodelib/fs.scandir/download/@nodelib/fs.scandir-2.1.5.tgz?cache=0&sync_timestamp=1622792706054&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40nodelib%2Ffs.scandir%2Fdownload%2F%40nodelib%2Ffs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -43,6 +285,46 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@tailwindcss/postcss7-compat@^2.2.7", "tailwindcss@npm:@tailwindcss/postcss7-compat":
+  version "2.2.7"
+  resolved "https://registry.nlark.com/@tailwindcss/postcss7-compat/download/@tailwindcss/postcss7-compat-2.2.7.tgz#5e7e436ed0f4e0ed945d35b1f87189daa681dd1f"
+  integrity sha1-Xn5DbtD04O2UXTWx+HGJ2qaB3R8=
+  dependencies:
+    arg "^5.0.0"
+    autoprefixer "^9"
+    bytes "^3.0.0"
+    chalk "^4.1.1"
+    chokidar "^3.5.2"
+    color "^3.2.0"
+    cosmiconfig "^7.0.0"
+    detective "^5.2.0"
+    didyoumean "^1.2.2"
+    dlv "^1.1.3"
+    fast-glob "^3.2.7"
+    fs-extra "^10.0.0"
+    glob-parent "^6.0.0"
+    html-tags "^3.1.0"
+    is-glob "^4.0.1"
+    lodash "^4.17.21"
+    lodash.topath "^4.5.2"
+    modern-normalize "^1.1.0"
+    node-emoji "^1.8.1"
+    normalize-path "^3.0.0"
+    object-hash "^2.2.0"
+    postcss "^7"
+    postcss-functions "^3"
+    postcss-js "^2"
+    postcss-load-config "^3.1.0"
+    postcss-nested "^4"
+    postcss-selector-parser "^6.0.6"
+    postcss-value-parser "^4.1.0"
+    pretty-hrtime "^1.0.3"
+    purgecss "^4.0.3"
+    quick-lru "^5.1.1"
+    reduce-css-calc "^2.1.8"
+    resolve "^1.20.0"
+    tmp "^0.2.1"
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -261,6 +543,11 @@ cosmiconfig@^7.0.0:
     parse-json "^5.0.0"
     path-type "^4.0.0"
     yaml "^1.10.0"
+
+crelt@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.nlark.com/crelt/download/crelt-1.0.5.tgz#57c0d52af8c859e354bace1883eb2e1eb182bb94"
+  integrity sha1-V8DVKvjIWeNUus4Yg+suHrGCu5Q=
 
 css-unit-converter@^1.1.1:
   version "1.1.2"
@@ -515,6 +802,44 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+klona@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.nlark.com/klona/download/klona-2.0.4.tgz#7bb1e3affb0cb8624547ef7e8f6708ea2e39dfc0"
+  integrity sha1-e7Hjr/sMuGJFR+9+j2cI6i4538A=
+
+lezer-css@^0.13.0:
+  version "0.13.1"
+  resolved "https://registry.nlark.com/lezer-css/download/lezer-css-0.13.1.tgz#272582af7616318a7e0b6432fdf943c35499c96b"
+  integrity sha1-JyWCr3YWMYp+C2Qy/flDw1SZyWs=
+  dependencies:
+    lezer "^0.13.0"
+
+lezer-html@^0.13.5:
+  version "0.13.6"
+  resolved "https://registry.nlark.com/lezer-html/download/lezer-html-0.13.6.tgz#e9bc4489b96c9c671efcb2455cbf08aa4ec09cb9"
+  integrity sha1-6bxEiblsnGce/LJFXL8Iqk7AnLk=
+  dependencies:
+    lezer "^0.13.3"
+
+lezer-javascript@^0.13.0:
+  version "0.13.4"
+  resolved "https://registry.nlark.com/lezer-javascript/download/lezer-javascript-0.13.4.tgz#f2b36e83bf02cce6df05601133134357133be76e"
+  integrity sha1-8rNug78CzObfBWARMxNDVxM7524=
+  dependencies:
+    lezer "^0.13.0"
+
+lezer-tree@^0.13.0, lezer-tree@^0.13.2:
+  version "0.13.2"
+  resolved "https://registry.nlark.com/lezer-tree/download/lezer-tree-0.13.2.tgz#00f4671309b15c27b131f637e430ce2d4d5f7065"
+  integrity sha1-APRnEwmxXCexMfY35DDOLU1fcGU=
+
+lezer@^0.13.0, lezer@^0.13.3, lezer@^0.13.4:
+  version "0.13.5"
+  resolved "https://registry.nlark.com/lezer/download/lezer-0.13.5.tgz#6000536bca7e24a5bd62e8cb4feff28b37e7dd8f"
+  integrity sha1-YABTa8p+JKW9YujLT+/yizfn3Y8=
+  dependencies:
+    lezer-tree "^0.13.2"
+
 lilconfig@^2.0.3:
   version "2.0.3"
   resolved "https://registry.nlark.com/lilconfig/download/lilconfig-2.0.3.tgz#68f3005e921dafbd2a2afb48379986aa6d2579fd"
@@ -539,6 +864,13 @@ lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
+
+lru-cache@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.nlark.com/lru-cache/download/lru-cache-6.0.0.tgz#6d6fe6570ebd96aaf90fcad1dafa3b2566db3a94"
+  integrity sha1-bW/mVw69lqr5D8rR2vo7JWbbOpQ=
+  dependencies:
+    yallist "^4.0.0"
 
 merge2@^1.3.0:
   version "1.4.1"
@@ -656,6 +988,11 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   resolved "https://registry.nlark.com/picomatch/download/picomatch-2.3.0.tgz?cache=0&sync_timestamp=1621648305056&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fpicomatch%2Fdownload%2Fpicomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
   integrity sha1-8fBh3o9qS/AiiS4tEoI0+5gwKXI=
 
+pify@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.nlark.com/pify/download/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
+  integrity sha1-7RQaasBDqEnqWISY59yosVMw6Qw=
+
 postcss-functions@^3:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/postcss-functions/download/postcss-functions-3.0.0.tgz#0e94d01444700a481de20de4d55fb2640564250e"
@@ -665,6 +1002,15 @@ postcss-functions@^3:
     object-assign "^4.1.1"
     postcss "^6.0.9"
     postcss-value-parser "^3.3.0"
+
+postcss-import@^14.0.2:
+  version "14.0.2"
+  resolved "https://registry.nlark.com/postcss-import/download/postcss-import-14.0.2.tgz?cache=0&sync_timestamp=1620671991111&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fpostcss-import%2Fdownload%2Fpostcss-import-14.0.2.tgz#60eff77e6be92e7b67fe469ec797d9424cae1aa1"
+  integrity sha1-YO/3fmvpLntn/kaex5fZQkyuGqE=
+  dependencies:
+    postcss-value-parser "^4.0.0"
+    read-cache "^1.0.0"
+    resolve "^1.1.7"
 
 postcss-js@^2:
   version "2.0.3"
@@ -682,6 +1028,15 @@ postcss-load-config@^3.1.0:
     import-cwd "^3.0.0"
     lilconfig "^2.0.3"
     yaml "^1.10.2"
+
+postcss-loader@^6.1.1:
+  version "6.1.1"
+  resolved "https://registry.nlark.com/postcss-loader/download/postcss-loader-6.1.1.tgz?cache=0&sync_timestamp=1625142952652&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fpostcss-loader%2Fdownload%2Fpostcss-loader-6.1.1.tgz#58dd0a3accd9bc87cc52eff75244db578d11301a"
+  integrity sha1-WN0KOszZvIfMUu/3UkTbV40RMBo=
+  dependencies:
+    cosmiconfig "^7.0.0"
+    klona "^2.0.4"
+    semver "^7.3.5"
 
 postcss-nested@^4:
   version "4.2.3"
@@ -704,7 +1059,7 @@ postcss-value-parser@^3.3.0:
   resolved "https://registry.npm.taobao.org/postcss-value-parser/download/postcss-value-parser-3.3.1.tgz#9ff822547e2893213cf1c30efa51ac5fd1ba8281"
   integrity sha1-n/giVH4okyE88cMO+lGsX9G6goE=
 
-postcss-value-parser@^4.1.0:
+postcss-value-parser@^4.0.0, postcss-value-parser@^4.1.0:
   version "4.1.0"
   resolved "https://registry.npm.taobao.org/postcss-value-parser/download/postcss-value-parser-4.1.0.tgz#443f6a20ced6481a2bda4fa8532a6e55d789a2cb"
   integrity sha1-RD9qIM7WSBor2k+oUypuVdeJoss=
@@ -761,6 +1116,13 @@ quick-lru@^5.1.1:
   resolved "https://registry.npm.taobao.org/quick-lru/download/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha1-NmST5rPkKjpoheLpnRj4D7eoyTI=
 
+read-cache@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.nlark.com/read-cache/download/read-cache-1.0.0.tgz#e664ef31161166c9751cdbe8dbcf86b5fb58f774"
+  integrity sha1-5mTvMRYRZsl1HNvo28+GtftY93Q=
+  dependencies:
+    pify "^2.3.0"
+
 readdirp@~3.6.0:
   version "3.6.0"
   resolved "https://registry.npm.taobao.org/readdirp/download/readdirp-3.6.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freaddirp%2Fdownload%2Freaddirp-3.6.0.tgz#74a370bd857116e245b29cc97340cd431a02a6c7"
@@ -786,7 +1148,7 @@ resolve-from@^5.0.0:
   resolved "https://registry.npm.taobao.org/resolve-from/download/resolve-from-5.0.0.tgz#c35225843df8f776df21c57557bc087e9dfdfc69"
   integrity sha1-w1IlhD3493bfIcV1V7wIfp39/Gk=
 
-resolve@^1.20.0:
+resolve@^1.1.7, resolve@^1.20.0:
   version "1.20.0"
   resolved "https://registry.npm.taobao.org/resolve/download/resolve-1.20.0.tgz?cache=0&sync_timestamp=1613054898763&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fresolve%2Fdownload%2Fresolve-1.20.0.tgz#629a013fb3f70755d6f0b7935cc1c2c5378b1975"
   integrity sha1-YpoBP7P3B1XW8LeTXMHCxTeLGXU=
@@ -813,6 +1175,13 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
+semver@^7.3.5:
+  version "7.3.5"
+  resolved "https://registry.nlark.com/semver/download/semver-7.3.5.tgz?cache=0&sync_timestamp=1622685835879&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fsemver%2Fdownload%2Fsemver-7.3.5.tgz#0b621c879348d8998e4b0e4be94b3f12e6018ef7"
+  integrity sha1-C2Ich5NI2JmOSw5L6Us/EuYBjvc=
+  dependencies:
+    lru-cache "^6.0.0"
+
 simple-swizzle@^0.2.2:
   version "0.2.2"
   resolved "https://registry.npm.taobao.org/simple-swizzle/download/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
@@ -829,6 +1198,11 @@ source-map@^0.6.1:
   version "0.6.1"
   resolved "https://registry.npm.taobao.org/source-map/download/source-map-0.6.1.tgz?cache=0&sync_timestamp=1601546737481&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsource-map%2Fdownload%2Fsource-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha1-dHIq8y6WFOnCh6jQu95IteLxomM=
+
+style-mod@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.nlark.com/style-mod/download/style-mod-4.0.0.tgz#97e7c2d68b592975f2ca7a63d0dd6fcacfe35a01"
+  integrity sha1-l+fC1otZKXXyynpj0N1vys/jWgE=
 
 supports-color@^5.3.0, supports-color@^5.4.0:
   version "5.5.0"
@@ -850,46 +1224,6 @@ supports-color@^7.1.0:
   integrity sha1-G33NyzK4E4gBs+R4umpRyqiWSNo=
   dependencies:
     has-flag "^4.0.0"
-
-"tailwindcss@npm:@tailwindcss/postcss7-compat":
-  version "2.2.7"
-  resolved "https://registry.nlark.com/@tailwindcss/postcss7-compat/download/@tailwindcss/postcss7-compat-2.2.7.tgz#5e7e436ed0f4e0ed945d35b1f87189daa681dd1f"
-  integrity sha1-Xn5DbtD04O2UXTWx+HGJ2qaB3R8=
-  dependencies:
-    arg "^5.0.0"
-    autoprefixer "^9"
-    bytes "^3.0.0"
-    chalk "^4.1.1"
-    chokidar "^3.5.2"
-    color "^3.2.0"
-    cosmiconfig "^7.0.0"
-    detective "^5.2.0"
-    didyoumean "^1.2.2"
-    dlv "^1.1.3"
-    fast-glob "^3.2.7"
-    fs-extra "^10.0.0"
-    glob-parent "^6.0.0"
-    html-tags "^3.1.0"
-    is-glob "^4.0.1"
-    lodash "^4.17.21"
-    lodash.topath "^4.5.2"
-    modern-normalize "^1.1.0"
-    node-emoji "^1.8.1"
-    normalize-path "^3.0.0"
-    object-hash "^2.2.0"
-    postcss "^7"
-    postcss-functions "^3"
-    postcss-js "^2"
-    postcss-load-config "^3.1.0"
-    postcss-nested "^4"
-    postcss-selector-parser "^6.0.6"
-    postcss-value-parser "^4.1.0"
-    pretty-hrtime "^1.0.3"
-    purgecss "^4.0.3"
-    quick-lru "^5.1.1"
-    reduce-css-calc "^2.1.8"
-    resolve "^1.20.0"
-    tmp "^0.2.1"
 
 tmp@^0.2.1:
   version "0.2.1"
@@ -915,6 +1249,11 @@ util-deprecate@^1.0.2:
   resolved "https://registry.npm.taobao.org/util-deprecate/download/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
+w3c-keyname@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.nlark.com/w3c-keyname/download/w3c-keyname-2.2.4.tgz#4ade6916f6290224cdbd1db8ac49eab03d0eef6b"
+  integrity sha1-St5pFvYpAiTNvR24rEnqsD0O72s=
+
 wrappy@1:
   version "1.0.2"
   resolved "https://registry.nlark.com/wrappy/download/wrappy-1.0.2.tgz?cache=0&sync_timestamp=1619133505879&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fwrappy%2Fdownload%2Fwrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
@@ -924,6 +1263,11 @@ xtend@^4.0.2:
   version "4.0.2"
   resolved "https://registry.npm.taobao.org/xtend/download/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
   integrity sha1-u3J3n1+kZRhrH0OPZ0+jR/2121Q=
+
+yallist@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.nlark.com/yallist/download/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
+  integrity sha1-m7knkNnA7/7GO+c1GeEaNQGaOnI=
 
 yaml@^1.10.0, yaml@^1.10.2:
   version "1.10.2"
