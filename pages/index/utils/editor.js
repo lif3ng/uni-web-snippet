@@ -25,5 +25,6 @@ export const getEditorState = async (lang, onChange, code) => {
     );
     extensions.push(css());
   }
+  console.log(code || "");
   return EditorState.create({ doc: code || "", extensions });
 };

@@ -1,6 +1,5 @@
 <template>
   <view>
-    file tabs 2
     <view class="space-x-1">
       <view
         v-for="{ key, label } in _tabs"
