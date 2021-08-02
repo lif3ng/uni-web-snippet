@@ -174,10 +174,14 @@ export default {
       this.doPreview();
     },
     doPreview() {
-      this.$refs.preview.contentDocument.body.innerHTML = generatePreview(
+      // this.$refs.preview.contentDocument.body.innerHTML = generatePreview(
+      //   this.preset,
+      //   this.code
+      // );
+      this.$refs.preview.setAttribute('srcdoc', generatePreview(
         this.preset,
         this.code
-      );
+      ))
     },
     onCodeChange(code) {
       console.log(this.activeTab, { code });
