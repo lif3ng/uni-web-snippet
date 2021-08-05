@@ -1,5 +1,7 @@
-import { EditorState, EditorView, basicSetup } from "@codemirror/basic-setup";
+import { EditorState, basicSetup } from "@codemirror/basic-setup";
 import { StateField } from "@codemirror/state";
+import { keymap } from "@codemirror/view";
+import { defaultTabBinding } from "@codemirror/commands";
 
 const handleChange = (onChange) =>
   StateField.define({
@@ -13,15 +15,15 @@ const handleChange = (onChange) =>
     },
   });
 export const getEditorState = async (lang, onChange, code) => {
-  const extensions = [handleChange(onChange || (() => {})), basicSetup];
+  const extensions = [handleChange(onChange || (() => {})), basicSetup, keymap.of([defaultTabBinding])];
   if (lang === "html") {
     const { html } = await import(
-      "@codemirror/lang-html" /* webpackChunkName: 'lang-html' */
+      "@codemirror/lang-html" /* webpackChunkName: "lang-html" */
     );
     extensions.push(html());
   } else if (lang === "css") {
     const { css } = await import(
-      "@codemirror/lang-css" /* webpackChunkName: 'lang-css' */
+      "@codemirror/lang-css" /* webpackChunkName: "lang-css" */
     );
     extensions.push(css());
   }
