@@ -18,7 +18,8 @@ export const getEditorState = async (lang, onChange, code) => {
   const extensions = [handleChange(onChange || (() => {})), basicSetup, keymap.of([defaultTabBinding])];
   if (lang === "html") {
     const { html } = await import(
-      "@codemirror/lang-html" /* webpackChunkName: "lang-html" */
+      /* webpackChunkName: "lang-html" */
+	   "@codemirror/lang-html"
     );
     extensions.push(html());
   } else if (lang === "css") {

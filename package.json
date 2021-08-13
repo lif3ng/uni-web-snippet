@@ -1,21 +1,57 @@
 {
-	"name": "web-snippet",
-	"version": "1.0.0",
-	"private": true,
-	"author": "lif3ng <lif3ng@icloud.com>",
-	"license": "MIT",
-	"dependencies": {
-		"@codemirror/basic-setup": "^0.18.2",
+  "name": "web-snippet",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "npm run dev:h5",
+    "build": "npm run build:h5",
+    "build:app-plus": "cross-env NODE_ENV=production UNI_PLATFORM=app-plus vue-cli-service uni-build",
+    "build:custom": "cross-env NODE_ENV=production uniapp-cli custom",
+    "build:h5": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build",
+    "dev:app-plus": "cross-env NODE_ENV=development UNI_PLATFORM=app-plus vue-cli-service uni-build --watch",
+    "dev:custom": "cross-env NODE_ENV=development uniapp-cli custom",
+    "dev:h5": "cross-env NODE_ENV=development UNI_PLATFORM=h5 vue-cli-service uni-serve",
+    "info": "node node_modules/@dcloudio/vue-cli-plugin-uni/commands/info.js"
+  },
+  "dependencies": {
+    "@codemirror/basic-setup": "^0.18.2",
 		"@codemirror/lang-css": "^0.18.0",
 		"@codemirror/lang-html": "^0.18.1",
 		"@codemirror/lang-javascript": "^0.18.0",
 		"@codemirror/state": "^0.18.7",
-		"@tailwindcss/postcss7-compat": "^2.2.7",
-		"autoprefixer": "^9",
-		"postcss": "^7",
-		"postcss-import": "^14.0.2",
-		"postcss-loader": "^6.1.1",
-		"tailwindcss": "npm:@tailwindcss/postcss7-compat"
-	},
-	"devDependencies": {}
+    "@dcloudio/uni-h5": "^2.0.0-31920210709003",
+    "@dcloudio/uni-helper-json": "*",
+    "@dcloudio/uni-i18n": "^2.0.0-31920210709003",
+    "@dcloudio/uni-stat": "^2.0.0-31920210709003",
+    "@vue/shared": "^3.0.0",
+    "core-js": "^3.6.5",
+    "flyio": "^0.6.2",
+    "regenerator-runtime": "^0.12.1",
+    "vue": "^2.6.11",
+    "vuex": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "~7.12.0",
+    "@dcloudio/types": "*",
+    "@dcloudio/uni-automator": "^2.0.0-31920210709003",
+    "@dcloudio/uni-cli-shared": "^2.0.0-31920210709003",
+    "@dcloudio/uni-migration": "^2.0.0-31920210709003",
+    "@dcloudio/uni-template-compiler": "^2.0.0-31920210709003",
+    "@dcloudio/vue-cli-plugin-hbuilderx": "^2.0.0-31920210709003",
+    "@dcloudio/vue-cli-plugin-uni": "^2.0.0-31920210709003",
+    "@dcloudio/vue-cli-plugin-uni-optimize": "^2.0.0-31920210709003",
+    "@dcloudio/webpack-uni-mp-loader": "^2.0.0-31920210709003",
+    "@dcloudio/webpack-uni-pages-loader": "^2.0.0-31920210709003",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "autoprefixer": "9",
+    "babel-plugin-import": "^1.11.0",
+    "postcss": "7",
+    "postcss-comment": "^2.0.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "uni-app": {
+    "scripts": {}
+  }
 }
